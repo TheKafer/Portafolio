@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'Channel Tuning';
+    src: url("font/ChannelTuning.ttf");
+}
+@font-face {
+    font-family:'Marketing Script';
+    src: url("font/MarketingScript.ttf");
+}
+
+@font-face {
+    font-family:'Bebas Neue';
+    src: url("font/BebasNeue-Regular.ttf");
+}
+
+#tittle{
+    font-size: 100px;
+    color: #ffbb00;
+    font-family: 'Channel Tuning';
+    font-style: normal;
+    text-align: center;
+}
+
+.paragraph{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#motivation{
+    font-size: 30px;
+    color: #ffbb00;
+    font-family: 'Marketing Script';
+    font-style: normal;
+    text-align: center;
+}
+
+body{
+    background: #000000;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.header #background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Icons/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article{ 
+    width: 100%;
+    height: auto;
+    overflow: hidden; 
+    display: block;
+    margin-top: 100px;
+ 
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+  }
+
+section{
+    padding: 100px;
+    color: #ffffff;
+}
+
+section article > h2{
+    font-size: 3em;
+}
+
+section article > p{
+    font-size: 1.2em;
+}
+
+.navbar-toggler-icon{
+    background-image: url("Icons/lines.png");
+}
+
+a{
+    color: #ffffff;
+}
+
+a:hover{
+    color: #ddbc50;
+}
+
+h2{
+    color:  #ffbb00;
+    font-family: 'Marketing Script';
+}
+
+.imgRedonda {
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+   
+}
+
+.project{
+    background-color: #ffbb008a;
+    border: 40px solid #000000;
+    border-radius:70px;
+    
+}
+
+.pProject{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3{
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Bebas Neue';
+}
+
+h4{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+

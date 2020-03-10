@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website is Kevin Ibarra's portfolio intended to provide employment information and a personal description.">
+    <metan name="keywords" content="Portafolio,Kafer,Kevin,Ibarra">
+    <meta name="author" content="Kafer">
+    <title>The Kafer</title>
+    <link rel="stylesheet" href="bootsrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+     <!--Encabezado-->
+     <header class="header">
+      <div id="background">
+        <div class="center">
+          <h1 id="tittle">Kafer</h1>
+          <p id="motivation">I don't know my limits</p>
+        </div>
+      </div>
+    </header>
+
+  
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-default justify-content-end fixed-top">
+        <!--Hamburguesa-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <!--Items-->  
+          <div class="navbar-nav">
+            <a class="nav-item nav-link " href="#about">About me</a>
+            <a class="nav-item nav-link " href="#studies">Studies</a>
+            <a class="nav-item nav-link " href="#projects">Projects</a>
+            <a class="nav-item nav-link " href="#contact">Contact</a>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Sección -->
+    <section>
+      <!--Descripción-->
+      <article id="about" class="container">
+        <h2>About me</h2>
+        <br>
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <p class="paragraph">I am Kevin Ibarra student systems engineering student, I love  to apply my career in other sciences suchs as agriculture, because I feel that I contribute to the world. In the last years of my career I focus on artificial intelligence doing my thesis with it and working on different projects with amazing people that helped me strengthen my abilities as a leader. </p>
+            <p class="paragraph">God has allowed me to have an amazing life where I have been able to live amazing experiences.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <figure>
+              <img class="img-fluid" src="images/about.jpg" alt="Problems with the image">
+            </figure>
+          </div>
+        </div>
+      </article>
+      <!--Estudios-->
+      <article id="studies" class="container">
+        <h2>Studies</h2>
+        <br>
+        <ul>
+          <div class="row">
+            <li class="paragraph col-12 col-md-8">- EIA Computer and systems engineering</li>
+            <p class="paragraph col-12 col-md-4">At present</p>
+          </div>
+          <div class="row">
+            <li class="paragraph col-12 col-md-8">- artificial intelligence diploma</li>
+            <p class="paragraph col-12 col-md-4">2019</p>
+          </div>
+          <div class="row">
+            <li class="paragraph col-12 col-md-8">- Systems technician of SENA</li>
+            <p class="paragraph col-12 col-md-4">2016</p>
+          </div>
+        </ul>
+      </article>
+      <!--Proyectos-->
+      <article id="projects" class="container">
+        <h2>Projects <a href="https://github.com/TheKafer"><img src="images/github.png" alt="Problems with icon" ></a></h2>
+        <br>
+        <p class="paragraph">Throughout my career I have made several projects, such as an application that is responsible for generating schedules for students in java or a platform to play checkers online using WebSockets. However, among the most notable are the following:</p>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 project">
+            <h3>Pest detection in chrysanthemums through artificial vision</h3>
+            <figure>
+              <img class="imgRedonda" src="images/alexis.jpg" alt="Problems with the image">
+            </figure>
+            <p class="pProject">The purpose of our thesis was to solve a problem of monitoring suffered by Colombian flower growers where artificial intelligence algorithms based on python were used. The director of our thesis was PhD. Isis Bonet who guided us in our learning process.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 project">
+            <figure>
+              <h3>Sentiment analysis based on data obtained from the web</h3>
+              <img class="imgRedonda" src="images/bedoya.jpg" alt="Problems with the image">
+            </figure>
+            <p class="pProject">In 2020 I started working on a business idea of a group of four people, their idea was to analyze text and images taken from the web to know that people talk about any company</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 project">
+            <h3>selling cellphones</h3>
+            <figure>
+              <img class="imgRedonda" src="images/cel.jpg" alt="Problems with the image">
+            </figure>
+            <p class="pProject">As a personal project in 2019 I started buying bad cell phones to repair and resell in order to help me with my university expenses, this allowed me to strengthen my sales skills where I learned to deal with customers.</p> 
+          </div>
+        </div>
+      </article>
+    </section>
+    <!--Pie de página-->
+    <footer id="contact" class="container">
+      <h2>Contact</h2>
+      <h4>Email: steamkafer@gmail.com</h4>
+      <h4>Instagram: celularrionegro</h4>
+    </footer>
+
+    <!--Código js para oscurecer al hacer scroll-->
+    <script type="text/javascript">
+      var headerBg = document.getElementById('background')
+      window.addEventListener('scroll',function(){
+        headerBg.style.opacity = 1 - +window.pageYOffset/550+''
+        headerBg.style.top = +window.pageYOffset+'px'
+      
+      })
+
+    </script>
+    <!--Scripts de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="bootsrap/js/bootstrap.min.js" ></script>
+
+  </body>
+</html>
